@@ -221,7 +221,7 @@ video {
   background-color: #343a40;
   padding: 18px 0;
   opacity: 0.6;
-  position: absolute;
+  position: fixed;
   top: 10px;
   width: 100%;
   z-index: 10;
