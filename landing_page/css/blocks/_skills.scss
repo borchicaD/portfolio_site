@@ -1,0 +1,48 @@
+//skills section style 
+.skills-container {
+    margin: 20px 0;
+}
+.skill {
+    width: 70%;
+    background: $body-color;
+    border: 1px solid $secondary;
+    border-radius: 15px; 
+    padding: 1px;
+    margin: 10px 0 14px;
+}
+.skill-progress {
+    background: linear-gradient(60deg, #7bfc0a, #11d1bb); 
+    color: $link-color;
+    padding: 3px; 
+    text-align: right; 
+    border-radius: 15px; 
+    font-size: 10px;
+
+    &-100 {
+        width: auto;
+    }
+    &-95 {
+        width: 95%;
+    }
+    &-90 {
+        width: 90%;
+    }
+    &-80 {
+        width: 80%;
+    }
+    &-70 {
+        width: 70%;
+    }
+    &-60 {
+        width: 60%;
+    }
+    &-50 {
+        width: 50%;
+    }
+    &-40 {
+        width: 40%;
+    }
+    &-30 {
+        width: 30%;
+    }
+}

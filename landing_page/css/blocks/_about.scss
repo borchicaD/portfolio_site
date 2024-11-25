@@ -1,0 +1,12 @@
+//about section style
+.about {
+    border-top: 5px solid transparent; /* Sets the border width */
+    border-image: linear-gradient(60deg, #7bfc0a, #11d1bb);
+    border-image-slice: 1;
+    background: $dark;
+    color: $link-color;
+    padding: 60px 0;
+}
+.about-content {
+    margin: auto 0;
+}

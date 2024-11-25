@@ -1,0 +1,124 @@
+//helper classes
+.line-height-2 {
+    line-height: 1.2;
+}
+.font-small {
+    font-size: $font-small;
+}
+.center {
+    margin: $margin-center;
+}
+.mt-80 {
+    margin-top: 80px;
+}
+.mb-60 {
+    margin-bottom: 60px;
+}
+.text-center {
+    text-align: center;
+}
+.margin-40 {
+    margin: 40px 0;
+}
+.container {
+    max-width: 1920px;
+    margin: $margin-center;
+    position: relative;
+}
+.wrapper {
+    max-width: 1140px;
+    margin: $margin-center;
+    padding: 0 16px;
+}
+.btn {
+    padding: 6px 20px;
+    min-width: 150px;
+    width: fit-content;
+    margin: 20px 0;
+    display: inline-block;
+    color: $link-color;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: $transition;
+    background: linear-gradient(60deg, #7bfc0a, #11d1bb);
+    cursor: pointer;
+    border-radius: 30px 0 60px 30px;
+    text-align: center;
+    transition: $transition;
+    line-height: 1;
+
+    &:hover {
+        opacity: .8;
+        color: $font-color-dark;
+    }
+}
+.grid-areas {
+    display: grid;
+    grid-template-areas: 
+    "top top top top top top" 
+    "A B C D E F";
+    gap: 40px;
+
+    &-top {
+        grid-area: top;
+    }
+    &-left {
+        grid-area: A;
+        grid-column: span 3; /* Span 3 columns */
+    }
+    &-right {
+        grid-area: D;
+        grid-column: span 3; /* Span 3 columns */
+    }
+    &-small {
+        grid-area: A;
+        grid-column: span 2;
+    }
+    &-large {
+        grid-area: D;
+        grid-column: span 4;
+    }
+}
+.image-border-box {
+    margin: 80px;
+}
+.image-border {
+    position: relative;
+    z-index: 5;
+    margin-right: 50px;
+    height: auto;
+
+    &::after {
+        content: '';
+        border: 5px solid transparent; /* Sets the border width */
+        border-image: linear-gradient(90deg, #7bfc0a, #11d1bb);
+        border-image-slice: 1;
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        z-index: -1;
+        left: 25px;
+        top: -25px;
+    }
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+.gradient-text {
+    background: $gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: fit-content;
+}
+.heading {
+    text-transform: uppercase;
+    font-weight: 600;
+}

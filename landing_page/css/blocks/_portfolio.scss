@@ -1,0 +1,39 @@
+//portfolio section style 
+.portfolio {
+    margin-top: 80px;
+}
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+.portfolio-card {
+    background: $bg-light;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    transition: $transition;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    color: $font-color-dark;
+
+    &:hover {
+        transform: translateY(-2px)
+    }
+}
+.portfolio-card-img {
+    flex: 1;
+    max-height: 160px;
+}
+.portfolio-card-content {
+    padding: 12px 8px;
+    border-top: 3px solid transparent; /* Sets the border width */
+    border-image: linear-gradient(60deg, #7bfc0a, #11d1bb);
+    border-image-slice: 1;
+
+    p {
+        display: none;
+    }
+}

@@ -1,0 +1,29 @@
+//hero style
+.hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the entire block */
+    z-index: -1; /* Places video behind content */
+}
+
+/* Center content vertically and horizontally */
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: $light;
+    z-index: 1;
+    padding: 15% 0;
+}
