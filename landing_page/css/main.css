@@ -175,26 +175,19 @@ video {
 }
 @media (min-width: 1024px) {
   .grid-areas {
+    grid-template-columns: repeat(6, 1fr);
     grid-template-areas: "top top top top top top" "A B C D E F";
     gap: 40px;
   }
-  .grid-areas-top {
+  .grid-areas .grid-areas-top {
     grid-area: top;
   }
-  .grid-areas-left {
-    grid-area: A;
-    grid-column: span 3; /* Span 3 columns */
+  .grid-areas .grid-areas-small {
+    grid-area: B; /* Assign a unique area */
+    grid-column: span 3;
   }
-  .grid-areas-right {
-    grid-area: D;
-    grid-column: span 3; /* Span 3 columns */
-  }
-  .grid-areas-small {
-    grid-area: A;
-    grid-column: span 2;
-  }
-  .grid-areas-large {
-    grid-area: D;
+  .grid-areas .grid-areas-large {
+    grid-area: E; /* Assign a unique area */
     grid-column: span 4;
   }
 }

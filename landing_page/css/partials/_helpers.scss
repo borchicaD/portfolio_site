@@ -63,38 +63,34 @@
 .grid-areas {
     display: grid;
     grid-template-columns: 1fr;
-
+  
     @media (min-width: $tablet) {
-        grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
-    
+  
     @media (min-width: $desktop) {
-        grid-template-areas: 
-        "top top top top top top" 
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-areas:
+        "top top top top top top"
         "A B C D E F";
-        gap: 40px;
-    
-        &-top {
-            grid-area: top;
-        }
-        &-left {
-            grid-area: A;
-            grid-column: span 3; /* Span 3 columns */
-        }
-        &-right {
-            grid-area: D;
-            grid-column: span 3; /* Span 3 columns */
-        }
-        &-small {
-            grid-area: A;
-            grid-column: span 2;
-        }
-        &-large {
-            grid-area: D;
-            grid-column: span 4;
-        }
+      gap: 40px;
+  
+      .grid-areas-top {
+        grid-area: top;
+      }
+  
+      .grid-areas-small {
+        grid-area: B; /* Assign a unique area */
+        grid-column: span 3;
+      }
+  
+      .grid-areas-large {
+        grid-area: E; /* Assign a unique area */
+        grid-column: span 4;
+      }
     }
-}
+  }
+  
 .image-border-box {
     margin: 80px;
 }
