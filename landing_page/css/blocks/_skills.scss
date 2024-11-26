@@ -1,4 +1,16 @@
 //skills section style 
+.skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 40px;
+
+    @media (max-width: $tablet) {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 25px;
+    }
+}
 .skills-container {
     margin: 20px 0;
 }

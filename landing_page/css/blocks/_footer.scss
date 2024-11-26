@@ -3,6 +3,10 @@
     background: $dark;
     color: $body-color;
     padding: 80px 0 25px;
+
+    @media (max-width: $tablet) {
+        margin: 40px 0 15px;
+    }
 }
 .footer-content-title {
     margin-bottom: 16px;
@@ -11,6 +15,18 @@
 }
 .footer-content {
     margin: 60px 0 80px;
+
+    @media (max-width: $tablet) {
+        margin: 30px 0 40px;
+    }
+
+    @media (max-width: $mobile) {
+        margin: 20px 0;
+
+        &:last-child {
+            margin: 20px 0 40px;
+        }
+    }
 }
 .icon {
     display: flex;

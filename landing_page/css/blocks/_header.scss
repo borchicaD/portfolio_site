@@ -1,12 +1,17 @@
 //header style
 .header {
     background-color: $dark;
-    padding: 18px 0;
+    padding: 12px 0;
     opacity: .6;
     position: fixed;
     top: 10px;
     width: 100%;
     z-index: 10;
+
+    
+    @media (min-width: $tablet) {
+        padding: 18px 0;
+    }
 
     .wrapper {
         display: flex;
@@ -15,12 +20,20 @@
     }
 }
 .logo {
-    width: 40px;
+    width: 30px;
     height: auto;
     object-fit: contain;
+
+    @media (min-width: $tablet) {
+        width: 40px;
+    }
 }
 .menu {
     display: flex;
     flex-direction: row;
     gap: 15px;
+
+    @media (max-width: $mobile) {
+        display: none;
+    }
 }

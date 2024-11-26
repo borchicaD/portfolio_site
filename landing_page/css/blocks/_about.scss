@@ -6,6 +6,12 @@
     background: $dark;
     color: $link-color;
     padding: 60px 0;
+
+    &__image {
+        @media (max-width: $tablet) {
+            display: none;
+        }
+    }
 }
 .about-content {
     margin: auto 0;
